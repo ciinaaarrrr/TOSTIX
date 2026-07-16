@@ -1,3 +1,13 @@
+body {
+  display: block;
+  background-color: #f8ebd8;
+}
+
+svg {
+  width: 26px;
+  height: 26px;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -5,15 +15,83 @@
   background-color: #f8f2ea;
 }
 
+.navbar {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+.instagram {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+.navbar-sv {
+  display: flex;
+  align-items: center;
+  height: 72px;
+}
+/*--------------------------------------------*/
 .header-container {
   display: flex;
   width: 100%;
-  height: 350px;
+  height: 232px;
   background-color: black;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background-image: url(/TOSTIX/Images/header-background.png);
+  background-image: url(/TOSTIX/Images/header-background1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+/*--------------------------------------------*/
+
+.main-container {
+  padding-top: 23px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+.main-container .item-1 {
+  display: flex;
+  width: 70px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #f8f2ea;
+  background-size: cover;
+}
+
+.item-1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 3px;
+  background-color: #f8f2ea;
+  background-size: cover;
+  border: 1.4px solid #322c231f;
+  border-radius: 5px;
+}
+
+h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color: #5f5040;
+}
+/*--------------------------------------------*/
+
+.container-menu {
 }
