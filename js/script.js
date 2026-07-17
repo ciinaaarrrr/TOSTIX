@@ -50,7 +50,7 @@ function ekstralariAc() {
 
 function menuAc() {
     document.getElementById("navbar-panel"
-    ).style.right = "0"; 
+    ).style.right = "-30%"; 
     document.getElementById("navbar-panel"
     ).style.transition = "right 0.3s ease";
 }
