@@ -38,6 +38,20 @@ svg {
   align-items: center;
   height: 72px;
 }
+
+#navbar-panel {
+  position: fixed;
+  right: -769px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: right 0.3s ease;
+  z-index: 101;
+  background-color: rgb(215 206 194);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 /*--------------------------------------------*/
 .header-container {
   display: flex;
@@ -55,6 +69,7 @@ svg {
 
 .main-container {
   padding-top: 23px;
+  padding-bottom: 23px;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -90,8 +105,147 @@ h4 {
   font-weight: 400;
   font-size: small;
   color: #5f5040;
+  text-align: center;
 }
 /*--------------------------------------------*/
 
-.container-menu {
+#container-menu-tostlar {
+  display: none;
+  flex-direction: column;
+  background-color: #edd7c0;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(15px) scale(0.98);
+  transition: 0.35s ease;
+}
+#container-menus.active,
+#container-menu-tostlar.active,
+#container-drink.active,
+#container-snack.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+#container-menus {
+  display: none;
+  flex-direction: column;
+  background-color: #edd7c0;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translateY(15px) scale(0.98);
+  transition: 0.35s ease;
+  opacity: 0;
+}
+#container-drink {
+  display: none;
+  flex-direction: column;
+  background-color: #edd7c0;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translateY(15px) scale(0.98);
+  transition: 0.35s ease;
+  opacity: 0;
+}
+#container-snack {
+  display: none;
+  flex-direction: column;
+  background-color: #edd7c0;
+  margin: 10px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translateY(15px) scale(0.98);
+  transition: 0.35s ease;
+  opacity: 0;
+}
+
+#container-menu-tostlar h2,
+#container-menus h2,
+#container-drink h2,
+#container-snack h2 {
+  padding-top: 10px;
+  color: #5f5040;
+  align-items: center;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.tost-menu {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.tost-item {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  background-color: #f8f2ea;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.tost-item div h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 5px;
+}
+
+.tost-item div p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  max-width: 220px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: auto;
+  background-color: #e2c6a9;
+  margin: 13px 10px 13px 10px;
+  border-radius: 7px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #433829;
+}
+svg.icon.icon-close {
+}
+.close-button {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-panel {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 93%;
+}
+
+.icon-close {
+  width: 10px;
+  height: 10px;
 }

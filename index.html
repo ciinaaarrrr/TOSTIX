@@ -10,62 +10,399 @@
 </head>
 
 <body>
+    <section id="navbar-panel">
+        <div class="container-panel">
+            <div class="close-button" onclick="panelKapat()">
+                <svg class="icon icon-close">
+                    <use xlink:href="symbol-defs.svg#icon-close"></use>
+                </svg>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h3>menü</h3>
+            </div>
+            <div>
+                <h3>ana sayfa</h3>
+            </div>
+            <div>
+                <h3>iletişim</h3>
+            </div>
+        </div>
+    </section>
 
 
 
+    <div class="navbar">
+        <div class="instagram">
+            <a href="https://www.instagram.com/tostix35">
+
+                <svg class="icon icon-instagram">
+                    <use xlink:href="symbol-defs.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="logo">
+            <h1>tostix</h1>
+            <!--  <img src="./Images/logo.png" alt="logo">-->
+        </div>
+        <div class="navbar-sv" onclick="menuAc()">
+
+            <svg class="icon icon-menu">
+                <use xlink:href="symbol-defs.svg#icon-menu"></use>
+            </svg>
+
+        </div>
+    </div>
+
+    <header class="header-container">
+
+
+
+    </header>
+    <main>
+
+
+        <section class="main-container">
+
+
+            <div class="item-1" onclick="tostlariAc()">
+                <div>
+                    <img src="./Images/sandwich.png" alt="tostlar">
+                    <h4>Tostlar</h4>
+                </div>
+            </div>
+
+            <div class="item-1" onclick="menüleriAc()">
+                <div>
+                    <img src="./Images/snack-menu.png" alt="Menüler">
+                    <h4>Menüler</h4>
+                </div>
+
+            </div>
+            <div class="item-1" onclick="icecekleriAc()">
+                <div>
+                    <img src="./Images/soda.png" alt="içecekler">
+                    <h4>İçecekler</h4>
+                </div>
+            </div>
+            <div class="item-1" onclick="ekstralariAc()">
+                <div>
+                    <img src="./Images/snack.png" alt="ekstralar">
+                    <h4>Ekstralar</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="container-menu-tostlar">
+            <div class="tost-menu">
+                <h2>Tostlar</h2>
+                <div class="tost-item">
+                    <div class="block">
+                        <img src="./Images/ktoast1.png" alt="kaşarlı tost" width="64px" height="64px">
+                        <div>
+                            <h5>Sade Kaşarlı Tost</h5>
+                            <p>Bol Erimiş Kaşar Peyniri, Domates</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <h6>130 TL</h6>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/stoast.png" alt="sucuklu tost" width="64px" height="64px">
+                            <div>
+                                <h5>Klasik Sucuklu Tost</h5>
+                                <p> Sucuk, Kaşar Peyniri</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>180 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/etoast.png" alt="karışık tost" width="64px" height="64px">
+                            <div>
+                                <h5>Tostix Karışık Tost</h5>
+                                <p>Sucuk, Salam, Sosis, Kaşar Peyniri</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>210 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/ctoast.png" alt="salçalı tost" width="64px" height="64px">
+                            <div>
+                                <h5>Gurme Salçalı Tost</h5>
+                                <p>Özel Salçalı Sos, Sucuk, Kaşar Peyniri</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>220 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/döner.png" alt="tavuk döner" width="55px" height="55px">
+                            <div>
+                                <h5>Tostix Dürüm Tavuk</h5>
+                                <p>Özel Soslu Tavuk, Çıtır Patates, Kaşar Peyniri, Ketçap, Mayonez, Turşu</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>300 TL</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="container-menus">
+            <div class="tost-menu">
+                <h2>Menüler</h2>
+                <div class="tost-item">
+                    <div class="block">
+                        <img src="./Images/tost-s.png" alt="kaşarlı tost" width="64px" height="64px">
+                        <div>
+                            <h5>Sade Kaşarlı Tost Menü</h5>
+                            <p>Bol Erimiş Kaşar Peyniri, Domates (Kolalı 320 TL)</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <h6>300 TL</h6>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/stoast.png" alt="sucuklu tost" width="64px" height="64px">
+                            <div>
+                                <h5>Klasik Sucuklu Tost Menü</h5>
+                                <p> Sucuk, Kaşar Peyniri (Kolalı 400 TL)</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>380 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/etoast.png" alt="karışık tost" width="64px" height="64px">
+                            <div>
+                                <h5>Tostix Karışık Tost Menü</h5>
+                                <p>Sucuk, Salam, Sosis, Kaşar Peyniri (Kolalı 440 TL)</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>420 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/ctoast.png" alt="salçalı tost" width="64px" height="64px">
+                            <div>
+                                <h5>Gurme Salçalı Tost Menü</h5>
+                                <p>Özel Salçalı Sos, Sucuk, Kaşar Peyniri (Kolalı 440 TL)</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>420 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/döner.png" alt="tavuk döner" width="55px" height="55px">
+                            <div>
+                                <h5>Tostix Dürüm Tavuk Menü</h5>
+                                <p>Özel Soslu Tavuk, Çıtır Patates, Kaşar Peyniri, Ketçap, Mayonez, Turşu
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>480 TL</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="container-drink">
+            <div class="tost-menu">
+                <h2>İçecekler</h2>
+                <div class="tost-item">
+                    <div class="block">
+                        <img src="./Images/cola.png" alt="coca cola" width="55px" height="55px">
+                        <div>
+                            <h5>Coca Cola</h5>
+                            <p>Zero (70 TL)</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <h6>80 TL</h6>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/ayran.png" alt="ayran" width="55px" height="55px">
+                            <div>
+                                <h5>Ayran</h5>
+                                <p>Küçük (40 TL)</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>50 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/ice-tea.png" alt="Iced tea" width="55px" height="55px">
+                            <div>
+                                <h5>Iced Tea</h5>
+                                <p>Mango Ananas, Şeftali, Limon </p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>80 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/lemon-tea.png" alt="Portakal Suyu" width="55px" height="55px">
+                            <div>
+                                <h5>Portakal Suyu</h5>
+                                <p>Taze Sıkılmış Portakal Suyu</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>120 TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/drink.png" alt="litrelik içicekler" width="55px" height="55px">
+                            <div>
+                                <h5>Litrelik İçicekler</h5>
+                                <p>Cola, Fanta, Sprite ve Ayran
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>100 TL</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="container-snack">
+            <div class="tost-menu">
+                <h2>Atıştırmalıklar</h2>
+                <div class="tost-item">
+                    <div class="block">
+                        <img src="./Images/snacks.png" alt="Karışık Başlangıç Tabağı" width="64px" height="64px">
+                        <div>
+                            <h5>Karışık Başlangıç Tabağı Max</h5>
+                            <p>Patates, Mozzarella Çubukları (4), Nugget(4), Soğan Halkası (4)</p>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <h6>??? TL</h6>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/snacks1.png" alt="Klasik Başlangıç Tabağı" width="64px" height="64px">
+                            <div>
+                                <h5>Klasik Başlangıç Tabağı</h5>
+                                <p>Patates Kızartması, Nugget (4), Soğan Halkası (4)</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>??? TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/mozzarella.png" alt="Mozzarella Çubukları" width="64px" height="64px">
+                            <div>
+                                <h5>Mozzarella Çubukları</h5>
+                                <p>4 Adet</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>??? TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/potatoes.png" alt="Patates Kızartması" width="64px" height="64px">
+                            <div>
+                                <h5>Patates Kızartması</h5>
+                                <p>200 Gram / 400 Gram</p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>??? TL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tost-item">
+                    <div class="tost-item">
+                        <div class="block">
+                            <img src="./Images/nuggets.png" alt="tavuk parçaları" width="55px" height="55px">
+                            <div>
+                                <h5>Tavuk Parçaları</h5>
+                                <p> 4 adet
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <h6>??? TL</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
 </body>
-<div class="navbar">
-    <div class="instagram">
-        <svg class="icon icon-instagram">
-            <use xlink:href="symbol-defs.svg#icon-instagram"></use>
-        </svg>
-    </div>
-    <div class="logo">
-        <h1>tostix</h1>
-        <!--  <img src="./Images/logo.png" alt="logo">-->
-    </div>
-    <div class="navbar-sv">
-        <svg class="icon icon-menu">
-            <use xlink:href="symbol-defs.svg#icon-menu"></use>
-        </svg>
-    </div>
-</div>
-<header class="header-container">
-
-</header>
-<main>
-    <section class="main-container">
-        <div class="item-1">
-            <div>
-                <img src="./Images/sandwich.png" alt="tostlar">
-                <h4>Tostlar</h4>
-            </div>
-        </div>
-        <div class="item-1">
-            <div>
-                <img src="./Images/soda.png" alt="içecekler">
-                <h4>İçecekler</h4>
-            </div>
-        </div>
-        <div class="item-1">
-            <div>
-                <img src="./Images/kebab.png" alt="dürümler">
-                <h4>Dürümler</h4>
-            </div>
-        </div>
-        <div class="item-1">
-            <div>
-                <img src="./Images/snack.png" alt="ekstralar">
-                <h4>Ekstralar</h4>
-            </div>
-        </div>
-    </section>
-
-    <section class="container-menu">
-        <div class="tost-menu">
-
-        </div>
-    </section>
-</main>
 
 </html>
